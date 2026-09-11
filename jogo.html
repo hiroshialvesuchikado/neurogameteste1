@@ -1,9 +1,5 @@
 <!DOCTYPE html>
 
-<!-- jogo.html -->
-
-
-
 <html lang="pt-BR">
 
 <head>
@@ -30,179 +26,192 @@
     <main class="game">
 
         <h1>
-    NeuroGame
-    <div
-    id="acoesPartida"
-    class="acoes-partida"
->
-
-    <button
-        id="reiniciarPartida"
-        type="button"
-        class="botao-acao"
-    >
-        🔄 Reiniciar partida
-    </button>
+            NeuroGame
+        </h1>
 
 
-    <button
-        id="voltarMenu"
-        type="button"
-        class="botao-acao"
-    >
-        ← Voltar ao menu
-    </button>
+        <!-- AÇÕES DA PARTIDA -->
 
-</div>
-</h1>
+        <div
+            id="acoesPartida"
+            class="acoes-partida"
+        >
 
-
-<h2 id="pergunta">
-    Preparando jogo...
-</h2>
-
-
-<!-- PAINEL -->
-
-<div class="painel">
-
-    <span>
-        Pontos:
-        <strong id="pontos">
-            0
-        </strong>
-    </span>
+            <button
+                id="reiniciarPartida"
+                type="button"
+                class="botao-acao"
+            >
+                🔄 Reiniciar partida
+            </button>
 
 
-    <span>
-        Questão:
+            <button
+                id="voltarMenu"
+                type="button"
+                class="botao-acao"
+            >
+                ← Voltar ao menu
+            </button>
 
-        <strong id="numeroQuestao">
-            1
-        </strong>
-
-        /
-
-        <strong id="totalQuestoes">
-            0
-        </strong>
-    </span>
+        </div>
 
 
-    <span>
-        Erros:
+        <!-- PERGUNTA -->
 
-        <strong id="erros">
-            0
-        </strong>
-    </span>
-
-</div>
+        <h2 id="pergunta">
+            Preparando jogo...
+        </h2>
 
 
-<!-- FEEDBACK -->
+        <!-- PAINEL -->
 
-<p id="feedback"></p>
-<div
-    id="areaDigitar"
-    class="area-digitar"
->
+        <div class="painel">
 
-    <input
-        id="respostaDigitada"
-        type="text"
-        placeholder="Digite o nome da estrutura"
-        autocomplete="off"
-    >
-
-    <button
-        id="confirmarResposta"
-        type="button"
-    >
-        Responder
-    </button>
-
-</div>
-
-<!-- INFORMAÇÃO DA ESTRUTURA -->
-
-<div
-    id="infoEstrutura"
-    class="info-estrutura"
->
-</div>
+            <span>
+                Pontos:
+                <strong id="pontos">
+                    0
+                </strong>
+            </span>
 
 
-<!-- IMAGEM -->
+            <span>
+                Questão:
 
-<div class="cerebro">
+                <strong id="numeroQuestao">
+                    1
+                </strong>
 
-    <img
-        id="imagemAnatomica"
-        alt="Imagem anatômica"
-    >
+                /
 
-    <svg
-        id="camadaHotspots"
-        class="hotspots"
-    >
-    </svg>
-
-</div>
+                <strong id="totalQuestoes">
+                    0
+                </strong>
+            </span>
 
 
+            <span>
+                Erros:
+
+                <strong id="erros">
+                    0
+                </strong>
+            </span>
+
+        </div>
 
 
+        <!-- FEEDBACK -->
+
+        <p id="feedback"></p>
 
 
-<!-- VERIFICADOR DE DADOS-->
+        <!-- ÁREA DE RESPOSTA DIGITADA -->
 
-<div id="painelAnalytics" class="painel-analytics">
-    <h3>📊 Analytics — Debug</h3>
+        <div
+            id="areaDigitar"
+            class="area-digitar"
+        >
 
-<div id="listaAnalytics">
+            <input
+                id="respostaDigitada"
+                type="text"
+                placeholder="Digite o nome da estrutura"
+                autocomplete="off"
+            >
 
-    <p id="mensagemAnalytics">
-        Nenhum registro ainda.
-    </p>
+            <button
+                id="confirmarResposta"
+                type="button"
+            >
+                Responder
+            </button>
 
-</div>
-</div>
+        </div>
+
+
+        <!-- INFORMAÇÃO DA ESTRUTURA -->
+
+        <div
+            id="infoEstrutura"
+            class="info-estrutura"
+        >
+        </div>
+
+
+        <!-- IMAGEM + HOTSPOTS -->
+
+        <div class="cerebro">
+
+            <img
+                id="imagemAnatomica"
+                alt="Imagem anatômica"
+            >
+
+            <svg
+                id="camadaHotspots"
+                class="hotspots"
+            >
+            </svg>
+
+        </div>
+
+
+        <!-- ANALYTICS / DEBUG -->
+
+        <div
+            id="painelAnalytics"
+            class="painel-analytics"
+        >
+
+            <h3>
+                📊 Analytics — Debug
+            </h3>
+
+            <div id="listaAnalytics">
+
+                <p id="mensagemAnalytics">
+                    Nenhum registro ainda.
+                </p>
+
+            </div>
+
+        </div>
+
     </main>
 
-<script src="js/analytics.js"></script>
 
-<script src="Mapas/mapaPalcoTelencefalo.js"></script>
-<script src="Mapas/mapaPalcoTelencefaloMedial.js"></script>
-<script src="Mapas/mapaCadaverSulcosTelencefaloLateral.js"></script>
+    <!-- ANALYTICS -->
 
-<script src="Mapas/catalogoMapas.js"></script>
-
-<script src="js/modoClicar.js"></script>
-<script src="js/modoDigitar.js"></script>
+    <script src="js/analytics.js"></script>
 
 
-<script src="js/game.js"></script>
+    <!-- MAPAS -->
+
+    <script src="Mapas/mapaPalcoTelencefalo.js"></script>
+
+    <script src="Mapas/mapaPalcoTelencefaloMedial.js"></script>
+
+    <script src="Mapas/mapaCadaverSulcosTelencefaloLateral.js"></script>
+
+
+    <!-- CATÁLOGO -->
+
+    <script src="Mapas/catalogoMapas.js"></script>
+
+
+    <!-- MODOS DE JOGO -->
+
+    <script src="js/modoClicar.js"></script>
+
+    <script src="js/modoDigitar.js"></script>
+
+
+    <!-- MOTOR PRINCIPAL -->
+
+    <script src="js/game.js"></script>
+
 </body>
+
 </html>
-
-
-    <div class="cerebro">
-
-    <img
-        id="imagemAnatomica"
-        alt="Imagem anatômica"
-    >
-
-    <svg
-        id="camadaHotspots"
-        class="hotspots"
-    >
-    </svg>
-
-</div>
-</body>
-</html>
-
-
-
