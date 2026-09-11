@@ -19,7 +19,7 @@ console.log(
 
 console.log(
     "Cadáver lateral:",
-    typeof mapaCadaverTelencefaloLateral
+    typeof mapaCadaverSulcosTelencefaloLateral
 );
 
 
@@ -82,7 +82,7 @@ const catalogoMapas = [
             "imagens/CadaverTelencefaloLateral.png",
 
         estruturas:
-            mapaCadaverTelencefaloLateral
+            mapaCadaverSulcosTelencefaloLateral
     }
 
 ];
@@ -112,7 +112,7 @@ console.log(
 
 console.log(
     "Qtd cadáver lateral:",
-    mapaCadaverTelencefaloLateral.length
+    mapaCadaverSulcosTelencefaloLateral.length
 );
 
 
