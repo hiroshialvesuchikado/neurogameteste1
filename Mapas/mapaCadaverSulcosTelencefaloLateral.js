@@ -1,4 +1,4 @@
-const mapaCadaverTelencefaloLateral =[
+const mapaCadaverSulcosTelencefaloLateral =[
 {
     id: "sulco_central",
     nome: "Sulco Central",
